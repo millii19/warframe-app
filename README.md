@@ -6,4 +6,4 @@ An app for the video game Warframe that supports players by pushing notification
 * [This](https://medium.com/@dna.mr.b/sublime-linting-for-react-and-es6-668fa9fa1e1c) link was used to set up [Eslint](https://eslint.org/)
 
 * Additional packages for Sublime:
- * [Terminal](https://packagecontrol.io/packages/Terminal)
+ ** [Terminal](https://packagecontrol.io/packages/Terminal)
