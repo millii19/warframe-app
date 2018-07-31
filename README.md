@@ -7,3 +7,10 @@ An app for the video game Warframe that supports players by pushing notification
 
 * Additional packages for Sublime:
   * [Terminal](https://packagecontrol.io/packages/Terminal)
+  * [Emmet](https://github.com/sergeche/emmet-sublime)
+  	To get Emmet work properly with ReactJS copy [this](https://gist.github.com/wesbos/2bb4a6998635df97c748) into your keybindings
+  * [import-cost](https://github.com/charleskenyon/import-cost-sublime)(manual install)
+  * [JavaScript Enhancements](https://github.com/pichillilorenzo/JavaScriptEnhancements)
+  * [ImportJS](https://github.com/galooshi/sublime-import-js)(also need to install binaries)
+  * [Git](https://github.com/kemayo/sublime-text-git)
+  * [GitGutter](https://github.com/jisaacks/GitGutter)

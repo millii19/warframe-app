@@ -194,7 +194,7 @@ module.exports = {
     "space-before-function-paren": [1, {"anonymous": "always", "named": "never"}], // require or disallow space before function opening parenthesis (off by default)
     "object-curly-spacing": [1, "always"], // require or disallow spaces inside brackets (off by default)
     "space-in-parens": [1, "never"], // require or disallow spaces inside parentheses (off by default)
-    "space-infix-ops": ["error", {"int32Hint": false}], // require spaces around operators
+    "space-infix-ops": 0, // ["error", {"int32Hint": false}], // require spaces around operators
     "keyword-spacing": [1, {"before": true}], // require a space after return, throw, and case
     "space-unary-ops": [1, {"words": true, "nonwords": false}], // Require or disallow spaces before/after unary operators (words on by default, nonwords off by default)
     "spaced-comment": [1, "always"], // require or disallow a space immediately following the // in a line comment (off by default)
