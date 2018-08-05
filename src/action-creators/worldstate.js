@@ -1,5 +1,5 @@
 import {
-  GET_WORLD_STATE,
+  SET_ALERTS,
   REFRESH_WORLD_STATE,
   SET_WORLD_STATE
 } from '../action-types/worldstate'
@@ -10,12 +10,12 @@ const refreshWorldState = () => ({
 
 export { refreshWorldState }
 
-const getWorldState = (value) => ({
-  type: GET_WORLD_STATE,
+const setAlerts = (value) => ({
+  type: SET_ALERTS,
   value
 })
 
-export { getWorldState }
+export { setAlerts }
 
 const setWorldState = (value) => ({
   type: SET_WORLD_STATE,

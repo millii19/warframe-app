@@ -1,16 +1,17 @@
 import { createLogic } from 'redux-logic'
 
-import { REFRESH_WORLD_STATE } from '../action-types/worldstate'
-import { fetch_world_state } from '../access/worldstate'
-import { setWorldState } from '../action-creators/worldstate'
+import { REFRESH_WORLD_STATE } from '../../action-types/worldstate'
+import { fetch_world_state } from '../../access/worldstate'
+import { setWorldState, setAlerts } from '../../action-creators/worldstate'
 
-const getWorldLogicLogic = createLogic({
+const getWorldstateLogic = createLogic({
   type: REFRESH_WORLD_STATE,
   latest: true,
   process({ }, dispatch, done) {
     fetch_world_state()
       .then(data => {
         dispatch(setWorldState(data))
+        dispatch(setAlerts(data.Alerts))
       })
       .catch(error => {
         console.warn('Error: ' + error)
@@ -19,4 +20,4 @@ const getWorldLogicLogic = createLogic({
   }
 })
 
-export default [ getWorldLogicLogic ]
+export default [ getWorldstateLogic ]

@@ -1,5 +1,5 @@
-import getWorldStateLogic from './worldStateLogic'
+import worldstateLogic from './worldstate'
 
 export default [
-  ...getWorldStateLogic
+  ...worldstateLogic
 ]

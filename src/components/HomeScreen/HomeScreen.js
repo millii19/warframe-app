@@ -7,7 +7,8 @@ import {
 const HomeScreen = (props) => {
   return (
   	<View>
-      <Text>{JSON.stringify(props.data)}</Text>
+      <Text>Hi</Text>
+      <Text>{JSON.stringify(props.alerts)}</Text>
   	</View>
   )
 }
