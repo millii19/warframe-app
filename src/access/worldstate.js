@@ -17,6 +17,7 @@ const get_url = (platform=PLATFORM.PC) => {
 const fetch_world_state = (platform=PLATFORM.PC) => {
   const url = get_url(platform)
   return fetch(url)
+    .then(res => res.json())
 }
 
 export { fetch_world_state }

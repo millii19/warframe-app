@@ -11,6 +11,4 @@ const worldStateReducer = (worldState=initialWorldState, action) => {
   }
 }
 
-export default {
-  worldState: worldStateReducer
-}
+export default worldStateReducer

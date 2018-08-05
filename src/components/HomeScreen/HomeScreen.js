@@ -7,7 +7,7 @@ import {
 const HomeScreen = (props) => {
   return (
   	<View>
-      <Text>{props.data}</Text>
+      <Text>{JSON.stringify(props.data)}</Text>
   	</View>
   )
 }

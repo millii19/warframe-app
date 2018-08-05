@@ -4,9 +4,8 @@ import {
   SET_WORLD_STATE
 } from '../action-types/worldstate'
 
-const refreshWorldState = (value) => ({
-  type: REFRESH_WORLD_STATE,
-  value
+const refreshWorldState = () => ({
+  type: REFRESH_WORLD_STATE
 })
 
 export { refreshWorldState }

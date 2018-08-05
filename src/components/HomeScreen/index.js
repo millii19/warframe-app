@@ -4,7 +4,7 @@ import { refreshWorldState } from '../../action-creators/worldstate'
 import HomeScreen from './HomeScreen'
 
 const mapStateToProps = (state) => ({
-  data: state.data
+  data: state.worldState
 })
 
 const mapDispatchToProps = (dispatch) => ({
