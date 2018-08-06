@@ -1,7 +1,7 @@
 import { combineReducers } from 'redux'
 
-import worldStateReducer from './worldStateReducer'
+import worldstateReducer from './worldstateReducer'
 
 export default combineReducers({
-  worldstate: worldStateReducer
+  worldstate: worldstateReducer
 })

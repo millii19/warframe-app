@@ -18,6 +18,10 @@ import rootReducer from './src/reducers'
 const logic = createLogicMiddleware(rootLogic)
 const store = createStore(rootReducer, applyMiddleware(logic))
 
+
+// fetch initial world state
+store.dispatch(refreshWorldState())
+
 export default class App extends React.Component {
   render() {
     return (
@@ -33,5 +37,3 @@ export default class App extends React.Component {
 }
 
 // load user preferences
-// fetch initial world state
-store.dispatch(refreshWorldState())

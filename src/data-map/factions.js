@@ -1,5 +1,7 @@
 const FACTIONS = {
-  FC_GRINEER: 'Grineer'
+  FC_GRINEER: 'Grineer',
+  FC_INFESTATION: 'Infested',
+  FC_CORPUS: 'Corpus'
 }
 
 const mapFactionType = (raw) => {

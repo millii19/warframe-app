@@ -24,5 +24,5 @@ const setAlertsLogic = createLogic({
 })
 
 export default [
-  ...setAlertsLogic
+  setAlertsLogic
 ]
