@@ -1,15 +1,21 @@
+import { Container } from 'native-base'
 import React from 'react'
-import {
-  View,
-  Text
-} from 'react-native'
+
+import Alert from '../warframe/Alert'
+
+const styles = {
+  container: {
+    padding: 10
+  }
+}
 
 const HomeScreen = (props) => {
   return (
-  	<View>
-      <Text>Hi</Text>
-      <Text>{JSON.stringify(props.alerts)}</Text>
-  	</View>
+    <Container style={styles.container} >
+      {
+        props.alerts.map(alert => <Alert data={alert} key={alert.id}/>)
+      }
+    </Container>
   )
 }
 

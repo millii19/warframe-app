@@ -13,8 +13,8 @@ class Alert {
 const generateAlert = (data) => {
   const mission = generateMissionInfo(data.MissionInfo)
   const alert = new Alert(
-    new Date(data.Activation.$date.$numberLong * 1000),
-    new Date(data.Expiry.$date.$numberLong * 1000),
+    new Date(Number(data.Activation.$date.$numberLong)),
+    new Date(Number(data.Expiry.$date.$numberLong)),
     mission,
     data._id.$oid
   )

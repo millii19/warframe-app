@@ -1,5 +1,6 @@
 import mapMissionType from '../data-map/mission-types'
 import mapFactionType from '../data-map/factions'
+import { generateReward } from './reward'
 
 class MissionInfo {
   constructor(type, faction, location, minEnemyLevel, maxEnemyLevel,
@@ -10,12 +11,16 @@ class MissionInfo {
     this.minEnemyLevel = minEnemyLevel
     this.maxEnemyLevel = maxEnemyLevel
     this.difficulty = difficulty
+    this.rewards = rewards
     this.rounds = rounds
     Object.freeze(this)
   }
 }
 
 const generateMissionInfo = (data) => {
+  const rewards = Object.keys(data.missionReward).map(
+    k => generateReward(k, data.missionReward[k])
+  )
   return new MissionInfo(
     mapMissionType(data.missionType),
     mapFactionType(data.faction),
@@ -23,7 +28,7 @@ const generateMissionInfo = (data) => {
     data.minEnemyLevel,
     data.maxEnemyLevel,
     data.difficulty,
-    data.missionRewards,
+    rewards,
     data.maxWaveNum
   )
 }
