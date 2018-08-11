@@ -1,6 +1,7 @@
 const REWARD_TYPE = {
   ITEM: 'Item',
-  CREDITS: 'Credits'
+  CREDITS: 'Credits',
+  COUNTED_ITEMS: 'countedItems'
 }
 
 

@@ -1,44 +1,62 @@
 import { Container, Text } from 'native-base'
+import { View } from 'react-native';
 import React from 'react'
 
 const styles = {
   container: {
-    flexDirection: 'row'
+    flexDirection: 'row',
+    height: 40,
+    marginBottom: 10
   },
   dates: {
     flex: 1,
     flexDirection: 'column'
   },
+  lighter: {
+    color: '#696969'
+  },
   description: {
-    flex: 3,
+    flex: 4,
     flexDirection: 'column'
   },
-  rewards: {
-    flex: 2,
-    flexDirection: 'column'
+  row: {
+    flex: 1,
+    flexDirection: 'row'
   }
+}
+
+function format_two_digits(n) {
+  return n < 10 ? '0' + n : n
+}
+
+const getTime = (date) => {
+  return format_two_digits(date.getHours()) + ':' + format_two_digits(date.getMinutes())
 }
 
 const Alert = (props) => {
   return (
-    <Container style={styles.container} >
-      <Container style={styles.dates} >
-        <Text>{props.data.from.getHours() + ':' + props.data.from.getMinutes()}</Text>
-        <Text>{props.data.to.getHours() + ':' + props.data.to.getMinutes()}</Text>
-      </Container>
-      <Container style={styles.description} >
-        <Text>Enemy: {props.data.mission.faction}</Text>
-        <Text>Type: {props.data.mission.type}</Text>
-        <Text>Level: {props.data.mission.minEnemyLevel}-{props.data.mission.maxEnemyLevel}</Text>
-      </Container>
-      <Container>
-        {
-          props.data.mission.rewards.map((reward, index) => (
-            <Text key={index} >{reward.type}: {reward.value}</Text>
-          ))
-        }
-      </Container>
-    </Container>
+    <View style={styles.container} >
+      <View style={styles.dates} >
+        <Text style={styles.lighter} >{getTime(props.data.from)}</Text>
+        <Text style={styles.lighter} >{getTime(props.data.to)}</Text>
+      </View>
+      <View style={styles.description} >
+        <View style={styles.row} >
+          <Text>{props.data.mission.faction} </Text>
+          <Text>{props.data.mission.type} </Text>
+          <Text style={styles.lighter} >({props.data.mission.minEnemyLevel}-{props.data.mission.maxEnemyLevel})</Text>
+        </View>
+        <View style={styles.row} >
+          <Text>
+            {
+              props.data.mission.rewards.map((reward) => (
+                reward.string()
+              )).join(', ')
+            }
+          </Text>
+        </View>
+      </View>
+    </View>
   )
 }
 
