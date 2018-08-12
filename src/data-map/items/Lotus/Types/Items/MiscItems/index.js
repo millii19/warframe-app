@@ -2,7 +2,9 @@ const DESCRIPTORS = {
   Eventium: 'Synthula',
   NeuralSensor: 'Neural Sensors',
   Ferrite: 'Ferrite',
-  Tellurium: 'Tellurium'
+  Tellurium: 'Tellurium',
+  Alertium: 'Nitain Extract',
+  VoidTearDrop: 'Void Traces'
 }
 
 const mapItemType = (raw) => {

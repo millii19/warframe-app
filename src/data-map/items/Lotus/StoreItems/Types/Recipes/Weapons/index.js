@@ -6,7 +6,8 @@ const DESCRIPTORS = {
 
 const ITEMS = {
   JawBlueprint: 'Jaw Sword BP',
-  PangolinSwordBlueprint: 'Pangolin Sword BP'
+  PangolinSwordBlueprint: 'Pangolin Sword BP',
+  CeramicDaggerBlueprint: 'Ceramic Dagger BP'
 }
 
 const mapItemType = (raw) => {

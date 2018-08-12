@@ -6,7 +6,8 @@ const MISSION_TYPES = {
   MT_MOBILE_DEFENSE: 'Mobile Defense',
   MT_SURVIVAL: 'Survival',
   MT_TERRITORY: 'Interception',
-  MT_RETRIEVAL: 'Hijack'
+  MT_RETRIEVAL: 'Hijack',
+  MT_EXCAVATE: 'Excavation'
 }
 
 const mapMissionType = (raw) => {
