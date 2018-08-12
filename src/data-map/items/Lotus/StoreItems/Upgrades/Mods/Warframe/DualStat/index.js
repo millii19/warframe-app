@@ -1,11 +1,5 @@
 const DESCRIPTORS = {
-  Eventium: 'Synthula',
-  NeuralSensor: 'Neural Sensors',
-  Ferrite: 'Ferrite',
-  Tellurium: 'Tellurium',
-  Alertium: 'Nitain Extract',
-  VoidTearDrop: 'Void Traces',
-  OxiumAlloy: 'Oxium'
+  RunSpeedArmorMod: 'Armored Agility'
 }
 
 const mapItemType = (raw) => {

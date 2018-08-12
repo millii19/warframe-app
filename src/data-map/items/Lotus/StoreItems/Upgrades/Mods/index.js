@@ -1,7 +1,9 @@
 import mapItemType from './FusionBundles'
+import mapWarframeMods from './Warframe'
 
 const DESCRIPTORS = {
-  FUSION_BUNDLES: 'FusionBundles'
+  FUSION_BUNDLES: 'FusionBundles',
+  WARFRAME: 'Warframe'
 }
 
 
@@ -10,6 +12,8 @@ const mapItem = (raw) => {
   switch (res[1]) {
   case DESCRIPTORS.FUSION_BUNDLES:
     return mapItemType(res[2])
+  case DESCRIPTORS.WARFRAME:
+    return mapWarframeMods(res[2])
   default:
     return raw
   }
