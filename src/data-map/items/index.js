@@ -1,4 +1,5 @@
 import mapLotusItemType from './Lotus'
+// import Items from 'warframe-items'
 
 const DESCRIPTORS = {
   LOTUS: 'Lotus'
@@ -22,4 +23,18 @@ const mapItem = (str) => {
   return item
 }
 
+/*
+const items = new Items()
+
+const mapWarframeItem = (str) => {
+  const arr = items.filter(item => item.uniqueName === str)
+  return arr.length === 1
+    ? arr[0].name
+    : str
+}
+
+
+export { items }
+export default mapWarframeItem
+*/
 export default mapItem
