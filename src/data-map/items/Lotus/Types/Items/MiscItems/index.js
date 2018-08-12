@@ -5,7 +5,8 @@ const DESCRIPTORS = {
   Tellurium: 'Tellurium',
   Alertium: 'Nitain Extract',
   VoidTearDrop: 'Void Traces',
-  OxiumAlloy: 'Oxium'
+  OxiumAlloy: 'Oxium',
+  ArgonCrystal: 'Argon Crystal'
 }
 
 const mapItemType = (raw) => {
