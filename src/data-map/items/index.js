@@ -23,9 +23,10 @@ const mapItem = (str) => {
   return item
 }
 
-/*
-const items = new Items()
 
+// const items = new Items()
+// const items = require('../../../node_modules/warframe-items/data/json/All.json')
+/*
 const mapWarframeItem = (str) => {
   const arr = items.filter(item => item.uniqueName === str)
   return arr.length === 1
