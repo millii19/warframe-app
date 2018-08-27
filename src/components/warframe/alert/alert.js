@@ -1,5 +1,5 @@
-import { Container, Text } from 'native-base'
-import { View } from 'react-native';
+import { Text } from 'native-base'
+import { View } from 'react-native'
 import React from 'react'
 
 const styles = {
@@ -44,15 +44,13 @@ const Alert = (props) => {
         <View style={styles.row} >
           <Text>{props.data.mission.faction} </Text>
           <Text>{props.data.mission.type} </Text>
-          <Text style={styles.lighter} >({props.data.mission.minEnemyLevel}-{props.data.mission.maxEnemyLevel})</Text>
+          <Text style={styles.lighter} >
+            ({props.data.mission.minEnemyLevel}-{props.data.mission.maxEnemyLevel})
+          </Text>
         </View>
         <View style={styles.row} >
           <Text>
-            {
-              props.data.mission.rewards.map((reward) => (
-                reward.string()
-              )).join(', ')
-            }
+            {props.data.mission.reward.asString}
           </Text>
         </View>
       </View>

@@ -8194,18 +8194,18 @@ warframe-items@^1.29.0:
     ajv "^6.5.2"
     pngquant-bin "^3.1.1"
 
-warframe-worldstate-data@0.0.240:
-  version "0.0.240"
-  resolved "https://registry.yarnpkg.com/warframe-worldstate-data/-/warframe-worldstate-data-0.0.240.tgz#b7012eb532159d6b574470b763a718fc55a1cab6"
+warframe-worldstate-data@0.0.349:
+  version "0.0.349"
+  resolved "https://registry.yarnpkg.com/warframe-worldstate-data/-/warframe-worldstate-data-0.0.349.tgz#97e10ff8562b83908091589bfee214b80609ffee"
 
-warframe-worldstate-parser@^2.0.2:
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/warframe-worldstate-parser/-/warframe-worldstate-parser-2.0.2.tgz#c4093139f6814aff722d46f4f3ae589f2fa0de95"
+warframe-worldstate-parser@^2.0.3:
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/warframe-worldstate-parser/-/warframe-worldstate-parser-2.0.3.tgz#bd373119074103b4199f52ae3643d448b2799f62"
   dependencies:
     chai "^4.1.2"
     node-md-config "^2.0.1"
     right-pad "^1.0.1"
-    warframe-worldstate-data "0.0.240"
+    warframe-worldstate-data "0.0.349"
 
 warning@3.0.0:
   version "3.0.0"

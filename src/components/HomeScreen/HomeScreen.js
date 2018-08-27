@@ -1,7 +1,6 @@
 import { Container } from 'native-base'
 import React from 'react'
-
-import Alert from '../warframe/Alert'
+import Alerts from '../warframe/Alerts'
 
 const styles = {
   container: {
@@ -9,12 +8,10 @@ const styles = {
   }
 }
 
-const HomeScreen = (props) => {
+const HomeScreen = () => {
   return (
     <Container style={styles.container} >
-      {
-        props.alerts.map(alert => <Alert data={alert} key={alert.id}/>)
-      }
+      <Alerts />
     </Container>
   )
 }
